@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Nexus | Modern AI Agency</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================= -->
+    <!-- HEADER -->
+    <!-- ========================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                AI<span>Nexus</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button class="btn-nav" onclick="bookConsultation()">
+                Book Consultation
+            </button>
+
+            <div class="theme-switch">
+                <input type="checkbox" id="theme-toggle">
+                <label for="theme-toggle" class="switch">
+                    <span class="icon">🌙</span>
+                </label>
+            </div>
+
+            <div id="clock"></div>
+
+            <!-- <button id="theme-toggle" onclick="toggleTheme()">🌙 Dark</button> -->
+
+        </nav>
+
+
+            <!-- <nav class="navbar">
+
+        <div class="logo">
+            AI<span>Nexus</span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button class="btn-nav">
+            Book Consultation
+        </button>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+    </nav> -->
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-left">
+
+            <h4>WELCOME TO AI NEXUS</h4>
+
+            <h1>
+                Transform Your Business With
+                Artificial Intelligence
+            </h1>
+
+            <p>
+
+                We build AI-powered software, automation tools,
+                machine learning solutions, and modern web
+                applications for startups and enterprises.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button onclick="requestQuote()">
+                    Get Started
+                </button>
+
+                <button class="secondary">
+                    View Portfolio
+                </button>
+
+            </div>
+
+        </div>
+        <div class="hero-right">
+            <img src="images/hero.png"alt="AI Illustration">
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- ABOUT -->
+    <!-- ========================= -->
+
+    <section id="about" class="about">
+
+        <div class="about-image">
+
+            <img src="images/about.jpg"
+                alt="About">
+
+        </div>
+
+        <div class="about-content">
+
+            <h2>Who We Are</h2>
+
+            <p>
+
+                AI Nexus is a modern digital agency specializing
+                in Artificial Intelligence, Web Development,
+                Cloud Solutions, Mobile Apps, Data Analytics,
+                and Business Automation.
+
+            </p>
+
+            <p>
+
+                Our mission is to help businesses embrace
+                technology and accelerate digital
+                transformation using innovative AI solutions.
+
+            </p>
+
+            <div class="stats">
+
+                <div class="card">
+
+                    <h3>250+</h3>
+
+                    <span>Projects</span>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>150+</h3>
+
+                    <span>Clients</span>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>10+</h3>
+
+                    <span>Years Experience</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+<!-- ========================= -->
+<!-- SERVICES SECTION -->
+<!-- ========================= -->
+
+<section id="services" class="services">
+
+    <div class="section-title">
+        <h2>Our Services</h2>
+        <p>AI-powered solutions designed to accelerate your business growth.</p>
+    </div>
+
+    <div class="services-container">
+
+        <div class="service-card">
+            <h3>AI Development</h3>
+            <p>Custom AI applications and intelligent automation systems.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Web Development</h3>
+            <p>Modern, responsive, and scalable web applications.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Mobile Apps</h3>
+            <p>Android and iOS solutions with modern UI/UX.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Cloud Solutions</h3>
+            <p>Secure cloud deployment and infrastructure management.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Data Analytics</h3>
+            <p>Business intelligence and advanced reporting systems.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Cyber Security</h3>
+            <p>Protect your systems with enterprise-grade security.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PORTFOLIO SECTION -->
+<!-- ========================= -->
+
+<section id="portfolio" class="portfolio">
+
+    <div class="section-title">
+        <h2>Our Portfolio</h2>
+        <p>Some of our recent successful projects.</p>
+    </div>
+
+    <div class="portfolio-container">
+
+        <div class="portfolio-card">
+            <img src="images/project1.jpg" alt="Project 1">
+            <h3>AI Chatbot</h3>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="images/project2.jpg" alt="Project 2">
+            <h3>Smart CRM System</h3>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="images/project3.jpg" alt="Project 3">
+            <h3>E-Commerce Platform</h3>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="images/project4.jpg" alt="Project 4">
+            <h3>Healthcare AI</h3>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="images/project5.jpg" alt="Project 5">
+            <h3>FinTech Dashboard</h3>
+        </div>
+
+        <div class="portfolio-card">
+            <img src="images/project6.jpg" alt="Project 6">
+            <h3>Document Scanner AI</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- PRICING SECTION -->
+<!-- ========================= -->
+
+<section id="pricing" class="pricing">
+
+    <div class="section-title">
+        <h2>Pricing Plans</h2>
+        <p>Select the package that fits your business needs.</p>
+    </div>
+
+    <div class="pricing-container">
+
+        <div class="price-card">
+
+            <h3>Starter</h3>
+
+            <h1>$499</h1>
+
+            <ul>
+                <li>Landing Page</li>
+                <li>Basic SEO</li>
+                <li>Email Support</li>
+            </ul>
+
+            <button onclick="selectPackage('starter',499)">
+                Select Plan
+            </button>
+
+        </div>
+
+        <div class="price-card featured">
+
+            <h3>Professional</h3>
+
+            <h1>$999</h1>
+
+            <ul>
+                <li>Business Website</li>
+                <li>Advanced SEO</li>
+                <li>Priority Support</li>
+                <li>Analytics Dashboard</li>
+            </ul>
+
+            <button onclick="selectPackage('professional',999)">
+                Select Plan
+            </button>
+
+        </div>
+
+        <div class="price-card">
+
+            <h3>Enterprise</h3>
+
+            <h1>$1999</h1>
+
+            <ul>
+                <li>Custom AI Solution</li>
+                <li>Dedicated Team</li>
+                <li>24/7 Support</li>
+                <li>Cloud Integration</li>
+            </ul>
+
+            <button onclick="selectPackage('enterprise',1999)">
+                Select Plan
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========================= -->
+<!-- TESTIMONIALS -->
+<!-- ========================= -->
+
+<section class="testimonials">
+
+    <div class="section-title">
+        <h2>Client Testimonials</h2>
+    </div>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-card">
+            <p>
+                "Outstanding AI solutions and professional team.
+                Highly recommended!"
+            </p>
+            <h4>Adil Rauf</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "Our business productivity increased significantly
+                after working with AI Nexus."
+            </p>
+            <h4>Asim Rauf</h4>
+        </div>
+
+        <div class="testimonial-card">
+            <p>
+                "Excellent communication and high-quality work."
+            </p>
+            <h4>Adana Rauf</h4>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+
+<section id="contact" class="contact">
+
+    <div class="section-title">
+        <h2>Contact Us</h2>
+    </div>
+
+    <form class="contact-form">
+
+        <input type="text" id="name"
+            placeholder="Your Name">
+
+        <input type="email" id="email"
+            placeholder="Your Email">
+
+        <textarea id="message"
+            rows="6"
+            placeholder="Your Message"></textarea>
+
+        <button type="button"
+            onclick="submitForm()">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<button id="topBtn" onclick="topFunction()">↑</button>
+
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <h2>AI Nexus</h2>
+
+        <p>
+            Building intelligent digital solutions for
+            modern businesses.
+        </p>
+
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- <div class="theme-colors">
+            <span class="color blue" onclick="changeColor('#00d9ff')"></span>
+            <span class="color green" onclick="changeColor('#00c853')"></span>
+            <span class="color purple" onclick="changeColor('#8e24aa')"></span>
+            <span class="color red" onclick="changeColor('#e53935')"></span>
+            <span class="color orange" onclick="changeColor('#ff9800')"></span>
+        </div> -->
+
+        <div class="theme-colors">
+            <span onclick="changeColor('#00d9ff')" style="background:#00d9ff"></span>
+            <span onclick="changeColor('#ff4d6d')" style="background:#ff4d6d"></span>
+            <span onclick="changeColor('#9b5de5')" style="background:#9b5de5"></span>
+            <span onclick="changeColor('#00c853')" style="background:#00c853"></span>
+            <span onclick="changeColor('#ff9800')" style="background:#ff9800"></span>
+            <span onclick="changeColor('#e6e91e')" style="background:#e6e91e"></span>
+            <span onclick="changeColor('#2962ff')" style="background:#2962ff"></span>
+        </div>
+
+        <p class="copyright">
+            2026 AI Nexus. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
